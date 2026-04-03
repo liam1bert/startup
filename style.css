@@ -1,0 +1,101 @@
+/* Styles Généraux */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #2c3e50;
+  background-color: #f4f7f6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin: 40px 0;
+  font-weight: 700;
+}
+
+/* Bannière */
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 20px;
+  opacity: 0.9;
+  font-weight: lighter;
+}
+
+.btn-bleu {
+  background-color: #1a5ca3; /* Un bleu plus "Institutionnel" */
+  padding: 16px 32px;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px; /* Bouton bien arrondi (style moderne) */
+  display: inline-block;
+  margin-top: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-bleu:hover {
+  background-color: #14467d;
+}
+
+/* Grille de Cartes */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-text {
+  margin-left: 15px;
+}
+
+.card-text h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-text p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #7f8c8d;
+}
